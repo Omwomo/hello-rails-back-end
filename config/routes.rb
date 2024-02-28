@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace :v1 do
-    get '/random_greeting', to: 'greetings#random_greeting'
+    get '/random_greeting', to: 'messages#random_greeting'
   end
 
   get "up" => "rails/health#show", as: :rails_health_check
